@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="vendors/css/uikit.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!--------- header section start----------->
+    
+    <header id="hero" >
+        <nav uk-sticky="start: 200; animation: uk-animation-slide-top">
+            <div class="row">
+                <img src="img/Personal-Website-free-psd.png" alt="" class="logo">
+                <a href="" class="nav-icon" onclick="openBtn()"><ion-icon name="menu-outline" ></ion-icon></a>
+            </div>
+            <div class="menu-container" id="navbar">
+                <div class="close-btn" onclick="closeBtn()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <div class="menu-item">
+                    <ul>
+                        <li><a onclick="closeBtn()" href="#">Home</a></li>
+                        <li><a onclick="closeBtn()" href="#">Works</a></li>
+                        <li><a onclick="closeBtn()" href="#">Experience</a></li>
+                        <li><a onclick="closeBtn()" href="#">Portfolio</a></li>
+                        <li><a onclick="closeBtn()" href="#">Testimonial</a></li>
+                        <li><a onclick="closeBtn()" href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            <div class="header-content ">
+                <h1 class="uk-animation-slide-bottom-medium">Paul Lapkin</h1>
+                <p class="uk-animation-slide-bottom-medium">#User Experience  #Music  #Creative Direction</p>
+            </div>
+    </header>
+    
+    <!----------- header section end --------->
+
+
+
+    <!--------- about section start ------------>
+     
+    <section id="about" >
+        <div class="row">
+            <div class="about-container">
+                <div class="about-item" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+                    <img src="img/owner.jpg" alt="">
+                </div>
+                <div class="about-item" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
+                    <h5>Hi, i'm Paul Lapkin, Experience Crafter from Canada.</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aperiam aut vitae incidunt similique esse dignissimos saepe blanditiis ratione a est veritatis corrupti Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, quas. sint, cum officiis, dolores sit har.
+                    <br><br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione, quibusdam modi sapiente dolorum voluptas.
+                    </p>
+                    <a href="#" class="btn">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------about section end -------------->
+
+
+
+    <!----------work section start -------------->
+     <section class="work" >
+         <div class="row">
+             <div class="work-title">
+                 <h2>My Working Process</h2>
+                 <p>Hi, i'm Paul Lapkin, Experience Crafter from Canada.</p>
+             </div>
+             <div class="work-container">
+                 <div class="work-item1">
+                     <img src="img/laptop.png" alt="">
+                     <h5>Design</h5>
+                 </div>
+                 <div class="work-item2">
+                    <img src="img/icon.png" alt="">
+                    <h5>development</h5>
+                </div>
+                <div class="work-item3">
+                    <img src="img/testing.png" alt="">
+                    <h5>testing</h5>
+                </div>
+                <div class="work-item4">
+                    <img src="img/icon3.png" alt="">
+                    <h5>launch</h5>
+                </div>
+             </div>
+         </div>
+     </section>
+
+    <!----------work section end -------------->
+
+
+    <!---- skills section start ----->
+
+     <section class="skills">
+        <div class="row">
+            <div class="skills-container">
+                <div class="skills-item">
+                    <h3>work experience</h3>
+                    <h4>Mad Max Design</h4>
+                    <h5 class="skills-date">OCT 2014 - june 2015</h5>
+                    <p class="skills-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <hr class="style">
+                    <h4>Crazy Design</h4>
+                    <h5 class="skills-date">OCT 2014 - june 2015</h5>
+                    <p class="skills-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="skills-item">
+                    <h3>education</h3>
+                    <h4>maddison university</h4>
+                    <h5 class="skills-date">OCT 2014 - june 2015</h5>
+                    <p class="skills-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <hr class="style">
+                    <h4>max design & art institute</h4>
+                    <h5 class="skills-date">OCT 2014 - june 2015</h5>
+                    <p class="skills-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <!---- skills section end ----->
+
+     <!-------- work sample section start ------->
+
+     <section class="work-sample" >
+         <div class="row">
+             <div class="work-sample-title">
+                 <h1>my latest works</h1>
+                 <p>Lorem ipsum dolor sit amet</p>
+             </div>
+             <div class="portfolio-filter">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter=".web-design">Web Design</button>
+                <button type="button" data-filter=".web-dev">Web Developers</button>
+                <button type="button" data-filter=".wp">Wordpress</button>
+                <button type="button" data-filter=".js">Javascript</button>
+             </div>
+             <div class="work-sample-container" uk-lightbox="animation: scale">                 
+                <div class="work-sample-item mix web-dev">
+                    <a href="img/work (1).jpg">
+                        <img src="img/work (1).jpg">
+                    </a>
+                 </div>
+                 <div class="work-sample-item mix js" >
+                    <a href="img/work (2).jpg">
+                        <img src="img/work (2).jpg">
+                    </a>
+                 </div>
+                 <div class="work-sample-item mix wp" >
+                    <a href="img/work (3).jpg">
+                        <img src="img/work (3).jpg">
+                    </a>
+                 </div>
+                 <div class="work-sample-item mix web-dev" >
+                    <a href="img/work (4).jpg">
+                        <img src="img/work (4).jpg">
+                    </a>
+                 </div>
+                 <div class="work-sample-item mix web-design">
+                    <a href="img/work (5).jpg" >
+                        <img src="img/work (5).jpg">
+                    </a>
+                 </div>
+                 <div class="work-sample-item mix web-dev">
+                    <a href="img/work (6).jpg">
+                        <img src="img/work (6).jpg">
+                    </a>
+                 </div>
+                 <div class="work-sample-item mix wp">
+                    <a href="img/work (7).jpg">
+                        <img src="img/work (7).jpg">
+                    </a>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+
+4
+ 0    <!-------- work sample section end ------->
+
+     <!-- ------ testimonial section start ----------->
+
+    <section class="testimonial" >
+        <div class="row">
+           <div class="testimonial-container">
+               <div class="testimonial-item">
+                <div class="quote">
+                    <img src="img/testimonial.png" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.</p>
+                <div class="signature">
+                    <img src="img/signature.png" alt="">
+                </div>
+                <h4>Deniel Croft</h4>
+                <span>Creative Designer, Levy</span>
+               </div>
+           </div>
+         </div>
+    </section>
+
+
+     <!-- ------ testimonial section end ----------->
+
+    <!---------- contact section start ---------->
+
+    <section class="contact" >
+        <div class="row">
+            <div class="contact-container">
+                <div class="contact-item">
+                    <h3>Leave a massage</h3>
+                    <form action="#">
+                        <div class="single-form">
+                            <input type="text" placeholder="Name" required >
+                        </div>
+                        <div class="single-form">
+                            <input type="email" placeholder="Email" required >
+                        </div>
+                        <div class="single-form">
+                            <input type="text" placeholder="Subject" required >
+                        </div>
+                        <div class="single-form">
+                            <textarea cols="30" rows="10" placeholder="Massage" required ></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <input type="submit" class="btn" value="Hire Me">
+                        </div>
+                    </form>
+                </div>
+                    <div class="contact-item-container">
+                        <div class="contact-nasted-item">
+                            <h3>Address</h3>
+                            <p>Gulshan Sales Office. SA Tower (Level-5), Plot#1, Road#134, Block SE(A), Gulshan-1, Dhaka 1212.</p>
+                        </div>
+                        <div class="contact-nasted-item">
+                            <h3>phone</h3>
+                            <p>+880 174 037 6995<br>
+                            +880 191 448 6969</p>
+                        </div>
+                        <div class="contact-nasted-item">
+                            <h3>web</h3>
+                            <p>Mail: quicksayed@gmail.com<br>
+                            Website: dribbble.com/alisayed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------- contact section end ---------->
+
+<!------- footer section start ------->
+
+    <footer class="footer">
+        <div class="row">
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+                            <li><a href="#"></a><i class="fa-brands fa-telegram"></i></li>
+                        </ul>
+                    </div>
+                <p>Copyright: Ali Sayed, All Rights Reserved.</p>
+            <div class="to-top">
+                <a href="#" uk-totop uk-scroll></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+<!------- footer section end ------->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="vendors/js/uikit-icons.min.js"></script>
+<script src="vendors/js/uikit.min.js"></script>
+<script src="vendors/js/mixitup.min.js"></script>
+<script src="vendors/js/particles.min.js"></script>
+<script src="vendors/js/app.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

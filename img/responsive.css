@@ -1,0 +1,39 @@
+ @media screen and (max-width: 1180px){
+    .row{
+        width: 100%;
+        padding: 0 40px;
+    }
+ }
+ @media screen and (max-width: 800px){
+    .about-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-item img{
+        width: 50%;
+    }
+    .about-item p{
+        margin: auto;
+    }
+    .work-sample-container{
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+ @media screen and (max-width: 670px){
+    .work-container{
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    .work-item1,.work-item2,.work-item3,.work-item4{
+        margin-top: 0px;
+    }
+    .skills-container, .contact-container{
+        grid-template-columns: 1fr;
+    }
+ }
+ @media screen and (max-width: 600px){
+    .header-content h1{
+       
+       font-size: 30px;
+    }
+ }
