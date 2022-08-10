@@ -424,66 +424,79 @@ header .navbar a:hover{
 /* footer section style start */
 
 .footer{
-    padding-top: 3rem;
-    background: url(/img/footer-bg.png) no-repeat center/cover;
+    width: 100%;
+    background: var(--gradient);
+    border-radius: 50px 50px 0px 0px;
+    margin-top: 100px;
+    padding: 50px 0 20px 0;
+ 
 }
-.footer .box-container{
-    display: flex;
-    flex-wrap: wrap;
+.footer-content{
     width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
-.footer .box-container .box{
-    flex:  1 1 25rem;
-    margin: 2rem;
+.box{
+    flex-basis: 25%;
 }
-.footer .box-container .box h3{
-    font-size: 2.5rem;
-    padding: 1rem 0;
-    color: #fff;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-}
-.footer .box-container .box p{
-    font-size: 1.5rem;
-    padding: .5rem 0;
-    color: #eee;
-}
-.footer .box-container .box a{
+.box a{
     display: block;
-    font-size: 1.5rem;
-    padding: .5rem 0;
-    color: #eee;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffffad;
 }
-.footer .box-container .box a:hover{
+.box p{
+    color: #eee;
+    font-size: 14px;
+    color: #ffffffad;
+    padding-right: 20px;
+}
+.box h3{
+    font-size: 25px;
+    color: #eee;
+    display: inline-block;
+    position: relative;
+   margin-bottom: 20px;
+}
+.box h3::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    margin: auto;
+
+}
+.box a:hover{
     text-decoration: underline;
 }
-.footer .box-container .box .info{
+.box .phone, .box .email, .box .location{
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
-.footer .box-container .box .info i{
-    margin: .5rem 0;
-    margin-right: 1rem;
-    border-radius: 50%;
-    background-color: #fff;
+.box i{
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 15px;
+    border-radius: 50px;
     color: var(--pink);
-    font-size: 1.7rem;
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    text-align: center;
 }
-.footer .credit{
-    font-size: 1.5rem;
-    font-weight: normal;
-    letter-spacing: .1rem;
-    color:#fff;
-    border-top: .1rem solid #fff5;
-    padding:2.5rem 1rem;
+.copyright{
+    width: 100%;
+    background: var(--gradient);
+    padding: 20px 9%;
     text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border-top: 1px solid #f5f5f5;
 }
-
-
+.copyright i{
+    margin-right: 10px;
+}
 
 /* footer section style end */

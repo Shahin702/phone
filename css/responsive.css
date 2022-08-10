@@ -57,7 +57,12 @@
     .home .content p{
         font-size: 1.5rem;
     }
-    
+    .footer-content{
+        flex-direction: column;
+    }
+    .box{
+        margin-top: 20px;
+    }
 
 }
 @media screen and (max-width: 450px){
